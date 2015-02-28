@@ -14,9 +14,9 @@ namespace ConsoleApplication1
         static int maxZeros = 0;
         static void Main(string[] args)
         {
-
-            Dive("A", 0);
-            
+            Console.Write("Starting with: ");
+            string starting = Console.ReadLine().Trim();
+            Dive(starting, 0);
         }
 
         private static void Dive(string prefix, int level)
